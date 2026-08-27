@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720" role="img" aria-labelledby="title desc">
+  <title id="title">Arquitetura conceitual do CliqueShop ERP</title>
+  <desc id="desc">Origens operacionais entram em uma camada de integração e normalização, seguem para regras financeiras e de inventário, persistência protegida e chegam ao workspace, alertas e rotinas.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#0b1f3a" flood-opacity=".10"/>
+    </filter>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#1877f2"/>
+      <stop offset="1" stop-color="#4f9cff"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto">
+      <path d="M1 1 9 6 1 11" fill="none" stroke="#8b98a9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="720" rx="44" fill="#f8fafc"/>
+  <g opacity=".45">
+    <circle cx="1410" cy="112" r="170" fill="#eaf3ff"/>
+    <circle cx="178" cy="642" r="190" fill="#fff1e7"/>
+  </g>
+  <text x="90" y="94" fill="#1877f2" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="20" font-weight="700" letter-spacing="3">FLUXO CONCEITUAL</text>
+  <text x="90" y="142" fill="#0b1f3a" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="38" font-weight="700">Informação operacional convertida em decisão</text>
+
+  <g filter="url(#shadow)">
+    <rect x="88" y="230" width="270" height="296" rx="28" fill="#fff" stroke="#dfe5eb"/>
+    <rect x="418" y="230" width="270" height="296" rx="28" fill="#fff" stroke="#dfe5eb"/>
+    <rect x="748" y="230" width="270" height="296" rx="28" fill="#fff" stroke="#dfe5eb"/>
+    <rect x="1078" y="230" width="430" height="296" rx="28" fill="#0b1f3a"/>
+  </g>
+
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+    <circle cx="136" cy="282" r="22" fill="#fff1e7"/>
+    <text x="136" y="289" text-anchor="middle" fill="#ff7a1a" font-size="18" font-weight="750">1</text>
+    <text x="126" y="344" fill="#0b1f3a" font-size="23" font-weight="700">Origens</text>
+    <text x="126" y="380" fill="#697789" font-size="17">Marketplace</text>
+    <text x="126" y="412" fill="#697789" font-size="17">Financeiro</text>
+    <text x="126" y="444" fill="#697789" font-size="17">Operação manual</text>
+    <text x="126" y="476" fill="#697789" font-size="17">Rotinas internas</text>
+
+    <circle cx="466" cy="282" r="22" fill="#eaf3ff"/>
+    <text x="466" y="289" text-anchor="middle" fill="#1877f2" font-size="18" font-weight="750">2</text>
+    <text x="456" y="344" fill="#0b1f3a" font-size="23" font-weight="700">Integração</text>
+    <text x="456" y="380" fill="#697789" font-size="17">Coleta controlada</text>
+    <text x="456" y="412" fill="#697789" font-size="17">Normalização</text>
+    <text x="456" y="444" fill="#697789" font-size="17">Idempotência</text>
+    <text x="456" y="476" fill="#697789" font-size="17">Conciliação</text>
+
+    <circle cx="796" cy="282" r="22" fill="#e9f8f1"/>
+    <text x="796" y="289" text-anchor="middle" fill="#1f9d67" font-size="18" font-weight="750">3</text>
+    <text x="786" y="344" fill="#0b1f3a" font-size="23" font-weight="700">Domínio</text>
+    <text x="786" y="380" fill="#697789" font-size="17">Regras financeiras</text>
+    <text x="786" y="412" fill="#697789" font-size="17">Inventário e custo</text>
+    <text x="786" y="444" fill="#697789" font-size="17">Pós-venda</text>
+    <text x="786" y="476" fill="#697789" font-size="17">Persistência protegida</text>
+
+    <circle cx="1126" cy="282" r="22" fill="#234d7d"/>
+    <text x="1126" y="289" text-anchor="middle" fill="#8fc0ff" font-size="18" font-weight="750">4</text>
+    <text x="1116" y="344" fill="#fff" font-size="23" font-weight="700">Decisão</text>
+    <rect x="1116" y="378" width="158" height="54" rx="14" fill="#1877f2"/>
+    <text x="1195" y="411" text-anchor="middle" fill="#fff" font-size="16" font-weight="650">Workspace</text>
+    <rect x="1290" y="378" width="170" height="54" rx="14" fill="#173a63"/>
+    <text x="1375" y="411" text-anchor="middle" fill="#d8e6f6" font-size="16" font-weight="650">Alertas</text>
+    <rect x="1116" y="448" width="158" height="54" rx="14" fill="#173a63"/>
+    <text x="1195" y="481" text-anchor="middle" fill="#d8e6f6" font-size="16" font-weight="650">Relatórios</text>
+    <rect x="1290" y="448" width="170" height="54" rx="14" fill="#173a63"/>
+    <text x="1375" y="481" text-anchor="middle" fill="#d8e6f6" font-size="16" font-weight="650">Rotinas</text>
+  </g>
+
+  <path d="M372 378h30" stroke="#8b98a9" stroke-width="2.4" marker-end="url(#arrow)"/>
+  <path d="M702 378h30" stroke="#8b98a9" stroke-width="2.4" marker-end="url(#arrow)"/>
+  <path d="M1032 378h30" stroke="#8b98a9" stroke-width="2.4" marker-end="url(#arrow)"/>
+
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="15">
+    <rect x="88" y="578" width="1420" height="76" rx="20" fill="#fff" stroke="#dfe5eb"/>
+    <circle cx="128" cy="616" r="8" fill="url(#accent)"/>
+    <text x="151" y="622" fill="#5f6d7f">Autenticação</text>
+    <circle cx="390" cy="616" r="8" fill="url(#accent)"/>
+    <text x="413" y="622" fill="#5f6d7f">Autorização na API</text>
+    <circle cx="720" cy="616" r="8" fill="url(#accent)"/>
+    <text x="743" y="622" fill="#5f6d7f">Trilha transacional</text>
+    <circle cx="1036" cy="616" r="8" fill="url(#accent)"/>
+    <text x="1059" y="622" fill="#5f6d7f">Exceções para revisão humana</text>
+  </g>
+</svg>
