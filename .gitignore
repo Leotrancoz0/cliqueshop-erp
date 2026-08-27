@@ -1,0 +1,41 @@
+# Credenciais e configuração
+.env
+.env.*
+*.pem
+*.key
+*.p12
+
+# Dados e documentos operacionais
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+*.bak
+*.backup
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.ods
+*.pdf
+*.doc
+*.docx
+*.log
+
+# Pacotes e arquivos gerados
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.map
+node_modules/
+dist/
+build/
+tmp/
+
+# Sistema e editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
