@@ -1,101 +1,51 @@
-# Módulos do CliqueShop ERP
+# CliqueShop ERP modules
 
-Este documento apresenta o inventário funcional do produto em nível público. Ele explica responsabilidades e jornadas sem revelar regras proprietárias, contratos de integração, parâmetros comerciais ou dados operacionais.
+This is a public responsibility inventory. It describes capabilities and journeys without exposing proprietary rules, integration contracts, commercial parameters, or operational data.
 
-## Início
+## Home
 
-| Capacidade | Responsabilidade |
-| --- | --- |
-| Prioridades | reunir eventos que exigem ação e colocá-los antes dos relatórios |
-| Indicadores | oferecer leitura resumida de resultado, caixa, estoque e liberações |
-| Valores a liberar | contextualizar recebimentos futuros sem tratá-los como caixa disponível |
-| Notificações | apresentar alertas acionáveis e evitar repetição desnecessária |
-| Movimentações | dar acesso rápido aos eventos financeiros e operacionais recentes |
+Priorities, summarized indicators, future settlement releases, actionable notifications, and recent financial or operational movement.
 
-## Operação
+## Operations
 
-| Capacidade | Responsabilidade |
-| --- | --- |
-| Tarefas | vincular trabalho a produtos, lotes, eventos ou decisões do ERP |
-| Agenda | organizar vencimentos e compromissos da equipe |
-| Checklists | decompor processos sem criar múltiplas telas ou controles redundantes |
-| Recorrências | gerar rotinas previsíveis e manter sua execução rastreável |
-| Alertas | comunicar exceções com deduplicação e tentativas controladas |
-| Telegram | levar resumos e alertas a um canal operacional autorizado |
-| Advisor | apresentar recomendações sintéticas com evidência e contexto |
-| Cadastros | organizar entidades administrativas necessárias aos fluxos |
-| Acessos | restringir administração e capacidades conforme autorização |
+Tasks linked to products, lots, events, or decisions; calendar; checklists; recurring work; deduplicated alerts; authorized messaging; contextual recommendations; administrative records; and access management.
 
-## Financeiro
+## Finance
 
-| Capacidade | Responsabilidade |
-| --- | --- |
-| Caixa | registrar entradas e saídas no momento financeiro correspondente |
-| DRE | apresentar receitas, custos e despesas pelo recorte de competência |
-| Conciliação | relacionar registros internos a documentos e eventos financeiros |
-| Recorrências | programar movimentos previsíveis e reduzir lançamentos repetidos |
-| Venda direta | registrar operações fora do fluxo principal do marketplace |
-| Relatórios | fechar períodos e oferecer visão auditável dos dados consolidados |
+Cash movement, accrual P&L, reconciliation, recurring entries, direct sales, and auditable period reports. Cash and accrual remain separate perspectives; the accounting treatment applicable to a business still requires professional validation.
 
-O sistema modela caixa e competência separadamente. O enquadramento contábil aplicável à empresa permanece sujeito à validação profissional correspondente.
+## Inventory
 
-## Estoque
-
-| Capacidade | Responsabilidade |
-| --- | --- |
-| Produtos | centralizar cadastro, identificação e informações essenciais do item |
-| Fornecedores | relacionar origens de compra sem expor condições comerciais reais |
-| Compras | formar entradas de mercadoria e seus custos associados |
-| Lotes | preservar a origem dos itens e o encadeamento de custos |
-| Custo médio | recalcular o custo conforme eventos elegíveis de entrada e ajuste |
-| Em trânsito | separar quantidade enviada de quantidade já recebida |
-| Distribuído | acompanhar unidades fora do estoque próprio |
-| Transferências | reconciliar movimentos entre localizações sem criar estoque duplicado |
+Products, suppliers, purchasing, lots, average cost, goods in transit, distributed inventory, and reconciled transfers. Origin and cost chains remain visible without exposing real supplier terms.
 
 ## Marketplace
 
-| Capacidade | Responsabilidade |
-| --- | --- |
-| Contas | organizar contextos comerciais autorizados |
-| Vendas | normalizar pedidos, tarifas, fretes e efeitos financeiros |
-| Anúncios | relacionar catálogo, preço, estoque e desempenho |
-| Promoções | avaliar participação e impacto comercial em contexto |
-| Atacado | apoiar cenários de preço e quantidade para negociação |
-| Viabilidade | comparar custo, venda e despesas em cenários demonstrativos |
-| Ads | acompanhar períodos e unidades de mídia sem alterar seu significado |
-| Ranking | relacionar posição de busca, anúncio e oportunidade comercial |
+Accounts, sales, listings, promotions, wholesale scenarios, commercial viability, Ads, and ranking. The regional adapter shown here is Mercado Livre (Mercado Libre), while the underlying responsibility model is marketplace-agnostic.
 
-A edição pública não contém OAuth, payloads, endpoints, janelas de sincronização, chaves de deduplicação, parâmetros reais de tarifa nem código de extensão.
+This public edition contains no OAuth flow, payload, endpoint, synchronization window, deduplication key, real fee parameter, or extension code.
 
-## Pós-venda
+## Post-sale
 
-| Capacidade | Responsabilidade |
-| --- | --- |
-| Reclamações | registrar o início do caso e seu contexto comercial |
-| Devoluções | acompanhar etapas logísticas e decisões relacionadas ao item |
-| Rastreamento | manter o estágio de retorno visível para a operação |
-| Recuperações | registrar valores recuperados e perdas relacionadas |
-| Efeito no estoque | reconciliar somente itens efetivamente recebidos e vendáveis |
-| Revisão humana | preservar casos danificados, contraditórios ou sem evidência suficiente |
+Claims, returns, logistics tracking, recovered amounts, losses, inventory effects, and human review. Only items physically received and considered saleable re-enter available inventory. Contradictory, damaged, or insufficiently evidenced cases remain manual.
 
-Nos cenários elegíveis cobertos por regressão, os controles evitam uma segunda entrada do mesmo retorno. Isso não significa que todo caso seja concluído automaticamente.
+## Cross-cutting capabilities
 
-## Capacidades transversais
+- server-side authentication and authorization;
+- scheduled routines and incremental processing;
+- alerts with deduplication and controlled retries;
+- event trails for reconciliation;
+- workflow-specific import and export;
+- contextual recommendations and opportunity signals;
+- a responsive, next-action-oriented interface.
 
-- autenticação e autorização no servidor;
-- rotinas agendadas e processamento incremental;
-- alertas com deduplicação e nova tentativa controlada;
-- trilha de eventos para conciliação;
-- importações e exportações aplicáveis aos fluxos;
-- advisor e radar de oportunidades com informações contextualizadas;
-- interface responsiva orientada à próxima ação.
+## What remains private
 
-## O que permanece privado
+- production ERP and extension source code;
+- databases, dumps, backups, spreadsheets, and operational documents;
+- credentials, tokens, domains, IPs, and topology;
+- API contracts, payloads, parsers, and synchronization strategies;
+- complete formulas, thresholds, prompts, and commercial rules;
+- user, client, supplier, sale, cost, and campaign data;
+- production indicators and outcomes.
 
-- código-fonte do ERP e da extensão;
-- banco de dados, dumps, backups, planilhas e documentos operacionais;
-- credenciais, tokens, domínios, IPs e topologia;
-- contratos de API, payloads, parsers e estratégias de sincronização;
-- fórmulas completas, thresholds, prompts e regras comerciais;
-- dados de usuários, clientes, fornecedores, vendas, custos e campanhas;
-- indicadores e resultados de produção.
+The Portuguese responsibility inventory is available in [Módulos](pt-BR/MODULOS.md).
