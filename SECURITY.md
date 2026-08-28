@@ -1,19 +1,15 @@
-# Segurança desta demonstração
+# Security of this demonstration
 
-Este repositório contém somente uma vitrine estática e dados sintéticos. Ele não contém nem recebe credenciais do CliqueShop ERP.
+This repository contains only a static showcase with synthetic data. It does not contain or accept CliqueShop ERP credentials.
 
-## Relato responsável
+## Responsible reporting
 
-Se você identificar exposição acidental de dados, segredo ou informação do produto de produção, não abra uma issue pública com o conteúdo encontrado. Use o canal privado do mantenedor ou o recurso de relato privado de vulnerabilidade do GitHub, quando disponível.
+If you identify an accidental exposure of data, a secret, or production-product information, do not open a public issue containing the material. Use the maintainer's private channel or GitHub private vulnerability reporting when available.
 
-Inclua somente:
+Include only the affected file path, a short description of the exposure type, and the minimum steps needed to locate it. Do not copy, redistribute, or attach sensitive content.
 
-- o caminho do arquivo afetado;
-- uma descrição curta do tipo de exposição;
-- passos mínimos para localizar o problema.
+## Out of scope
 
-Não copie, redistribua nem anexe o conteúdo sensível ao relato.
+This repository does not provide a production environment for penetration testing. There is no authorization to test systems, domains, accounts, or integrations related to the private product.
 
-## Fora de escopo
-
-Este repositório não oferece um ambiente de produção para testes de intrusão. Não há autorização para testar sistemas, domínios, contas ou integrações relacionados ao produto privado.
+Portuguese version: [SECURITY.pt-BR.md](SECURITY.pt-BR.md).

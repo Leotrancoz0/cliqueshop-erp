@@ -1,20 +1,13 @@
-# Aviso de propriedade intelectual
+# Intellectual-property notice
 
-Este repositório contém exclusivamente um estudo de caso e um mock demonstrativo do CliqueShop ERP.
+This repository contains only a case study and an independent demonstration mock of CliqueShop ERP.
 
-O software de produção é proprietário e não está incluído neste material. Nenhuma licença é concedida para copiar, modificar, distribuir, sublicenciar, realizar engenharia reversa ou explorar comercialmente o software de produção, sua implementação, suas regras ou seus ativos protegidos.
+The production software is proprietary and is not included. No license is granted to copy, modify, distribute, sublicense, reverse engineer, host, or commercially exploit the production product, its implementation, its rules, or protected assets.
 
-Os arquivos públicos deste estudo de caso também não são oferecidos sob licença open source. A disponibilidade em um repositório público permite a visualização e os usos inerentes às funcionalidades do GitHub, nos termos da plataforma, mas não concede direitos adicionais.
+The public case-study files are not offered under an open-source license either. Public availability permits viewing and GitHub platform uses under GitHub's terms, but grants no additional rights.
 
-Todos os nomes, identificadores, valores e registros exibidos na demonstração são fictícios. Qualquer semelhança com dados operacionais é mera coincidência.
+All names, identifiers, amounts, products, and records shown in the demonstration are synthetic. Any resemblance to operational data is coincidental.
 
-## Antes da publicação
+Open-source libraries, if any, remain governed by their own licenses. This notice does not replace specific legal advice on trademarks, copyright, contracts, or commercial licensing.
 
-A publicação deve permanecer bloqueada até que o responsável confirme:
-
-- a autorização para exibir o nome CliqueShop e o símbolo visual;
-- a titularidade ou autorização dos textos, imagens e demais ativos;
-- a ausência de dados pessoais, segredos, credenciais e informações operacionais;
-- que somente este diretório demonstrativo será enviado ao repositório público.
-
-Este aviso não substitui orientação jurídica específica sobre marca, direitos autorais, contratos ou licenciamento comercial.
+Portuguese version: [NOTICE.pt-BR.md](NOTICE.pt-BR.md).
